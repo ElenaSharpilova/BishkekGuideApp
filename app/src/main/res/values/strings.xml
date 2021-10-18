@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BishkekGuideApp</string>
+    <string name="viewpager_yoga_studio">YOGA STUDIOS</string>
+    <string name="viewpager_restaurant">RESTAURANT\nwith vegetarian menu</string>
+    <string name="viewpager_leisure">LEISURE</string>
+
+</resources>
