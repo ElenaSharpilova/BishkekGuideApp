@@ -21,8 +21,8 @@ public class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifec
     override fun createFragment(position: Int): Fragment {
         when (position) {
             0 -> return YogaStudiosFragment()
-            1 -> return LeisureFragment()
+            1 -> return RestaurantFragment()
         }
-        return RestaurantFragment()
+        return LeisureFragment()
     }
 }

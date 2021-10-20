@@ -4,4 +4,21 @@
     <string name="viewpager_restaurant">RESTAURANT\nwith vegetarian menu</string>
     <string name="viewpager_leisure">LEISURE</string>
 
+
+    <string name="name_avocado">AVACADO</string>
+    <string name="address_avocado">219 Сhui avenue</string>
+    <string name="phone_avocado">+996555880390</string>
+    <string name="description_avocado">Vegetarian, vegan coffee and buffet</string>
+
+    <string name="name_gandhi">GANDHI</string>
+    <string name="address_gandhi">41 Isanov str./Toktogul str.</string>
+    <string name="phone_gandhi">+996312442932\n+996705442932</string>
+    <string name="description_gandhi">Indian restaurant</string>
+
+
+    <string name="name_booblik">BOOBLIK</string>
+    <string name="address_booblik">103 Bokombaeva str.\n Sydykova str./T.Moldo str.</string>
+    <string name="phone_booblik">+996551155555\n+996550788788</string>
+    <string name="description_booblik">Italian, European cuisine, large selection of vegetarian dishes</string>
+
 </resources>
