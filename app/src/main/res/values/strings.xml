@@ -4,7 +4,7 @@
     <string name="viewpager_restaurant">RESTAURANT\nwith vegetarian menu</string>
     <string name="viewpager_leisure">LEISURE</string>
 
-
+    <!--RESTAURANT-->
     <string name="name_avocado">AVACADO</string>
     <string name="address_avocado">219 Сhui avenue</string>
     <string name="phone_avocado">+996555880390</string>
@@ -12,13 +12,57 @@
 
     <string name="name_gandhi">GANDHI</string>
     <string name="address_gandhi">41 Isanov str./Toktogul str.</string>
-    <string name="phone_gandhi">+996312442932\n+996705442932</string>
+    <string name="phone_gandhi">+996312442932\\n
+        +996705442932</string>
     <string name="description_gandhi">Indian restaurant</string>
 
 
     <string name="name_booblik">BOOBLIK</string>
     <string name="address_booblik">103 Bokombaeva str.\n Sydykova str./T.Moldo str.</string>
-    <string name="phone_booblik">+996551155555\n+996550788788</string>
+    <string name="phone_booblik">+996551155555\\n+996550788788</string>
     <string name="description_booblik">Italian, European cuisine, large selection of vegetarian dishes</string>
+
+    <!--YOGA STUDIO-->
+    <string name="name_atma">ATMA</string>
+    <string name="address_atma">17\2 Baitik Baatyra st.</string>
+    <string name="phone_atma">+996559930071</string>
+    <string name="description_atma">yoga, pilates, stretching</string>
+
+    <string name="name_egahall">ЁGA HALL</string>
+    <string name="address_egahall">103 Bokombaeva st.</string>
+    <string name="phone_egahall">+996553880108</string>
+    <string name="description_egahall">Located in the very center of Bishkek.\nOur studio is taught by professional instructors\n and presents a wide variety of yoga directions.
+        </string>
+
+    <string name="name_sattva">SATTVA - yoga </string>
+    <string name="address_sattva">167 Toktogula st.</string>
+    <string name="phone_sattva">+996708112212</string>
+    <string name="description_sattva">yoga, pilates, stretching,stand on nails</string>
+
+    <!--LEISURE-->
+    <string name="name_sumbule">SUMBULE SPA</string>
+    <string name="address_sumbule">54 Zhayil Baatyra st.</string>
+    <string name="phone_sumbule">+996551418888</string>
+    <string name="description_sumbule">More than 10 types of steam rooms, pool, jacuzzi, restaurant, massage</string>
+
+    <string name="name_arkantokoi">Rope park - ARKAN TOKOI</string>
+    <string name="address_arkantokoi">Elm grove, Bishkek</string>
+    <string name="phone_arkantokoi">+996504535444, +996550535444</string>
+    <string name="description_arkantokoi">Park of high-rise extreme Arkan Tokoy is an incredible set of nature, adrenaline,
+        pleasant physical activity, safety and walking distance for a city dweller. A ten-minute drive from the center of Bishkek,
+        in the shade of the magnificent trunks of the Karagachevaya Grove, passers-by in amazement raise their chins and enthusiastically
+        point their fingers at the mysterious intricacies of climbing ropes, strange rope ladders and wooden platforms that are stuck to
+        mighty, healthy oak trees. - You will get an adrenaline shower by following one of the suggested routes. By the way, there are several
+        of them - at a height of five to fifteen meters above the ground (from a two- to seven-story building), wooden platforms are securely fixed
+        in compliance with the international safety standard, connected to each other by nets, steps, swings, hinges, logs and other obstacles</string>
+
+    <string name="name_smile">Sports trampoline complex - SMILE</string>
+    <string name="address_smile">1B Gorky st.</string>
+    <string name="phone_smile">+996556466420</string>
+    <string name="description_smile">Sports trampoline complex "Smile" is - free jumping on a trampoline, acrobatic training, rock climbing wall,
+        bouldering wall, rope town. proJumping - fitness, entertainment, holidays, group programs. Sports complex "Smile" is a unique combination
+        of entertainment and sports, now available in Bishkek!
+        Working hours from 10:00 to 21:00
+    </string>
 
 </resources>
