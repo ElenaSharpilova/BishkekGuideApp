@@ -40,7 +40,7 @@ class RecyclerViewAdapter(private val click: RecyclerItemClick) :
                 binding.tvDescription.text = this.description
                 binding.tvPhone.text = this.phone
                 binding.expandedView.visibility = if (this.expand) View.VISIBLE else View.GONE
-                binding.cardLayout.setOnClickListener {
+                binding.dropDown.setOnClickListener {
                     this.expand = !this.expand
                     notifyDataSetChanged()
                 }

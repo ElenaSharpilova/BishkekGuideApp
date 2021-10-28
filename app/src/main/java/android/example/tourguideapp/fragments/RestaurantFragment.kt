@@ -25,12 +25,13 @@ class RestaurantFragment: Fragment(), RecyclerItemClick {
     private val adapter by lazy{RecyclerViewAdapter(this)}
     private val itemList by lazy{
         mutableListOf(
-            InfoAboutObject("AVACADO", "219 Сhui avenue", "Vegetarian, vegan coffee and buffet","+996555880390", false, "https://goo.gl/maps/MrRQo72QXn25AcdSA"),
-            InfoAboutObject ("GANDHI", "41 Isanov str./Toktogul str", "Indian restaurant", "+996312442932\\n+996705442932", false, "https://g.page/gandhirestro?share"),
-            InfoAboutObject ("BOOBLIK","103 Bokombaeva str.\\n Sydykova str./T.Moldo str.",
-            "Italian, European cuisine, large selection of vegetarian dishes", "+996551155555\\n+996550788788", false, "https://goo.gl/maps/ty8dGdmGL1ikmm16A")
+            InfoAboutObject("AVOCADO", "219 Сhui avenue", "Vegetarian, vegan coffee and buffet","+996555880390", false, "https://goo.gl/maps/ty8dGdmGL1ikmm16A"),
+            InfoAboutObject ("GANDHI", "41 Isanov str.", "Indian restaurant", "+996312442932", false, "https://g.page/gandhirestro?share"),
+            InfoAboutObject ("BOOBLIK","1 T.Moldo str.",
+            "Italian, European cuisine, large selection of vegetarian dishes", "+996551155555", false, "https://goo.gl/maps/LFQ24M2seqs3EAYX8")
         )
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,22 +44,15 @@ class RestaurantFragment: Fragment(), RecyclerItemClick {
         binding.listRecyclerView.adapter = adapter
         adapter.setList(itemList)
 
-        //val url = "https://cafe.kg/wp-content/uploads/2019/07/53491120_2037979912975947_2988720050245992448_n.jpg"
-        /*imageIcon = view.findViewById(R.id.iv_icon)
-        Glide.with(this)
-            .load(url)
-            .into(imageIcon)*/
         adapter.notifyDataSetChanged()
 
         return view
+
     }
 
     override fun recyclerItemClick(item: InfoAboutObject) {
-        val intentUri = Uri.parse(item.location)
-        val mapIntent = Intent(Intent.ACTION_VIEW, intentUri )
-        mapIntent.setPackage("com.google.android.apps.maps")
-        startActivity(mapIntent)
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(item.location))
+        startActivity(intent)
     }
-
 
 }

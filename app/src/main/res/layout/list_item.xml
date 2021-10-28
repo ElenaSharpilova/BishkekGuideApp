@@ -21,6 +21,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/avocado"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,22 +40,74 @@
             android:id="@+id/tv_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:fontFamily="@font/convergence"
             android:text="@string/name_avocado"
+            android:textSize="18sp"
             android:textStyle="bold"
-            android:textSize="20sp"
+            android:lines="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/start_guideline"
             app:layout_constraintTop_toTopOf="@+id/iv_icon" />
+
+        <ImageView
+            android:id="@+id/drop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/arrow_drop_down"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_phone"
+            app:layout_constraintStart_toEndOf="@+id/tv_phone" />
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/location"
+            app:layout_constraintStart_toStartOf="@+id/start_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
         <TextView
             android:id="@+id/tv_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textSize="18sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/kanit_light"
+            android:selectAllOnFocus="true"
             android:text="@string/address_avocado"
-            app:layout_constraintStart_toStartOf="@+id/start_guideline"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/location"
             app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/phone"
+            app:layout_constraintStart_toStartOf="@+id/start_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="3dp"
+            android:autoLink="phone"
+            android:fontFamily="@font/kanit_light"
+            android:linksClickable="true"
+            android:text="@string/phone_avocado"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_phone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address" />
 
         <RelativeLayout
             android:id="@+id/expanded_view"
@@ -66,54 +119,30 @@
             app:layout_constraintTop_toBottomOf="@id/iv_icon">
 
             <ImageView
-                android:id="@+id/location1"
+                android:id="@+id/iv_info"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/location" />
+                android:src="@drawable/info" />
 
             <TextView
                 android:id="@+id/tv_description"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_toEndOf="@id/location1"
+                android:layout_toEndOf="@id/iv_info"
+                android:fontFamily="@font/kanit_light"
                 android:text="@string/description_avocado"
-                android:textSize="18sp" />
+                android:textAlignment="textStart"
+                android:textSize="16sp" />
 
-            <ImageView
-                android:id="@+id/iv_phone1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/location1"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:src="@drawable/phone" />
-
-            <TextView
-                android:id="@+id/tv_phone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_description"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginEnd="10dp"
-                android:layout_toEndOf="@id/iv_phone1"
-                android:autoLink="phone"
-                android:linksClickable="true"
-                android:text="@string/phone_avocado"
-                android:textSize="18sp" />
 
         </RelativeLayout>
 

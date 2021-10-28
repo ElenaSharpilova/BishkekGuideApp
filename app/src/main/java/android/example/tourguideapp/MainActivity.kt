@@ -8,7 +8,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 val categoriesArray = arrayOf(
     "YOGA STUDIOS",
-    "RESTAURANT\nwith vegetarian menu",
+    "CAFE(vegetarian menu)",
     "LEISURE"
 )
 

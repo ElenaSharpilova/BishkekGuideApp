@@ -5,21 +5,20 @@
     <string name="viewpager_leisure">LEISURE</string>
 
     <!--RESTAURANT-->
-    <string name="name_avocado">AVACADO</string>
+    <string name="name_avocado">AVOCADO</string>
     <string name="address_avocado">219 Сhui avenue</string>
     <string name="phone_avocado">+996555880390</string>
     <string name="description_avocado">Vegetarian, vegan coffee and buffet</string>
 
     <string name="name_gandhi">GANDHI</string>
     <string name="address_gandhi">41 Isanov str./Toktogul str.</string>
-    <string name="phone_gandhi">+996312442932\\n
-        +996705442932</string>
+    <string name="phone_gandhi">+996312442932</string>
     <string name="description_gandhi">Indian restaurant</string>
 
 
     <string name="name_booblik">BOOBLIK</string>
-    <string name="address_booblik">103 Bokombaeva str.\n Sydykova str./T.Moldo str.</string>
-    <string name="phone_booblik">+996551155555\\n+996550788788</string>
+    <string name="address_booblik">1 T.Moldo str.</string>
+    <string name="phone_booblik">+996551155555</string>
     <string name="description_booblik">Italian, European cuisine, large selection of vegetarian dishes</string>
 
     <!--YOGA STUDIO-->
@@ -34,7 +33,7 @@
     <string name="description_egahall">Located in the very center of Bishkek.\nOur studio is taught by professional instructors\n and presents a wide variety of yoga directions.
         </string>
 
-    <string name="name_sattva">SATTVA - yoga </string>
+    <string name="name_sattva">SATTVA</string>
     <string name="address_sattva">167 Toktogula st.</string>
     <string name="phone_sattva">+996708112212</string>
     <string name="description_sattva">yoga, pilates, stretching,stand on nails</string>
@@ -47,7 +46,7 @@
 
     <string name="name_arkantokoi">Rope park - ARKAN TOKOI</string>
     <string name="address_arkantokoi">Elm grove, Bishkek</string>
-    <string name="phone_arkantokoi">+996504535444, +996550535444</string>
+    <string name="phone_arkantokoi">+996504535444</string>
     <string name="description_arkantokoi">Park of high-rise extreme Arkan Tokoy is an incredible set of nature, adrenaline,
         pleasant physical activity, safety and walking distance for a city dweller. A ten-minute drive from the center of Bishkek,
         in the shade of the magnificent trunks of the Karagachevaya Grove, passers-by in amazement raise their chins and enthusiastically
