@@ -1,7 +1,7 @@
 package android.example.tourguideapp.adapters
 
 import android.example.tourguideapp.InfoAboutObject
-
+import android.example.tourguideapp.R
 import android.example.tourguideapp.RecyclerItemClick
 import android.example.tourguideapp.databinding.ListItemBinding
 import android.view.LayoutInflater
@@ -31,7 +31,14 @@ class RecyclerViewAdapter(private val click: RecyclerItemClick) :
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         with(holder) {
             with(list[position]) {
-                //binding.ivIcon.setImageResource(this.icon)
+                if (this.urlImage!!.isNotBlank()){
+                    Glide.with(binding.ivIcon.context)
+                        .load(this.urlImage)
+                        .into(binding.ivIcon)
+                }else{
+                    Glide.with(binding.ivIcon.context).clear(binding.ivIcon)
+                    binding.ivIcon.setImageResource(R.drawable.ic_baseline_image_24)
+                }
                 binding.tvTitle.text = this.name
                 binding.tvAddress.text = this.address
                 binding.tvDescription.text = this.description
