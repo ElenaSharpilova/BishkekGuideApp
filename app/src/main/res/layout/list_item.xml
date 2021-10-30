@@ -38,11 +38,11 @@
 
         <TextView
             android:id="@+id/tv_title"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/convergence"
             android:text="@string/name_avocado"
-            android:textSize="18sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:lines="2"
             app:layout_constraintEnd_toEndOf="parent"
