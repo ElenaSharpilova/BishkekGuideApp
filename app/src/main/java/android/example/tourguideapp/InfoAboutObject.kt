@@ -2,7 +2,7 @@ package android.example.tourguideapp
 
 data class InfoAboutObject(
     val name: String? = null,
-    //val icon: Int,
+    //val urlImage: String?,
     val address: String? = null,
     val description: String? = null,
     val phone: String?,

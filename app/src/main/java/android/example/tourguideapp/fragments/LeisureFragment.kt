@@ -2,6 +2,7 @@ package android.example.tourguideapp.fragments
 
 import android.content.Intent
 import android.example.tourguideapp.InfoAboutObject
+import android.example.tourguideapp.R
 import android.example.tourguideapp.RecyclerItemClick
 import android.example.tourguideapp.adapters.RecyclerViewAdapter
 import android.example.tourguideapp.databinding.FragmentLeisureBinding
@@ -11,7 +12,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 
 class LeisureFragment : Fragment(), RecyclerItemClick {
     private var _binding: FragmentLeisureBinding? = null
@@ -34,12 +37,15 @@ class LeisureFragment : Fragment(), RecyclerItemClick {
     ): View? {
         _binding = FragmentLeisureBinding.inflate(inflater, container, false)
         val view = binding.root
+
         binding.listRecyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.listRecyclerView.adapter = adapter
         adapter.setList(itemList)
-
         adapter.notifyDataSetChanged()
+
+
         return view
+
     }
 
     override fun recyclerItemClick(item: InfoAboutObject) {
