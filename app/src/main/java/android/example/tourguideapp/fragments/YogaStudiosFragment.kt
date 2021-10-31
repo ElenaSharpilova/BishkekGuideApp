@@ -13,7 +13,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 
-
 class YogaStudiosFragment : Fragment(), RecyclerItemClick {
     private var _binding: FragmentYogaStudiosBinding? = null
     private val binding get() = _binding!!

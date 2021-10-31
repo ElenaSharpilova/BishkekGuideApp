@@ -27,7 +27,6 @@ class RestaurantFragment: Fragment(), RecyclerItemClick {
         )
     }
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,12 +39,10 @@ class RestaurantFragment: Fragment(), RecyclerItemClick {
         adapter.setList(itemList)
         adapter.notifyDataSetChanged()
         return view
-
     }
 
     override fun recyclerItemClick(item: InfoAboutObject) {
         val intent = Intent(Intent.ACTION_VIEW, Uri.parse(item.location))
         startActivity(intent)
     }
-
 }
